@@ -1,0 +1,111 @@
+baseURL: "http://localhost:1313/"
+title: 海东青的Blog
+copyright: "© 海东青的Blog"
+theme: [hugo-PaperMod]
+languageCode: "zh-cn"
+defaultContentLanguage: "zh-cn"
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+pygmentsUseClasses: true
+mainsections: ["posts"]
+
+minify:
+  disableXML: true
+
+pagination:
+  disableAliases: false
+pagerSize: 5
+
+taxonomies:
+  category: categories
+  tag: tags
+  series: series
+
+menu:
+  main:
+    - name: 归档
+      url: archives
+      weight: 5
+    - name: 搜索
+      url: search/
+      weight: 20
+    - name: 标签
+      url: tags/
+      weight: 15
+    - name: 分类         
+      url: categories/
+      weight: 10
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+params:
+  env: production
+  description: "海东青 - https://github.com/dongqing66/dongqing66.github.io"
+  author: "海东青"
+  defaultTheme: auto
+  ShowShareButtons: true
+  ShowReadingTime: false
+  displayFullLangName: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: true
+  ShowAllPagesInArchive: true
+  ShowPageNums: true
+  ShowToc: true
+  dateFormat: "2006-01-02 15:04"
+  images: ["images/papermod-cover.png"]
+
+  # 首页个性化介绍
+  homeInfoParams:
+    Title: "欢迎来到海东青的Blog"
+    Content: |
+      👋 你好，这里是海东青的个人博客！
+      - 记录技术成长、学习心得和生活点滴。
+      - 期待与你分享更多精彩内容！
+
+  # 社交图标
+  socialIcons:
+    - name: github
+      title: "我的Github"
+      url: "https://github.com/dongqing66"
+    - name: email
+      title: "发邮件给我"
+      url: "mailto:dongqing338@gmail.com"
+    - name: "x"
+      title: "我的X"
+      url: "https://x.com/dongqing666"
+
+  # 资料卡展示（如需可开启）
+  profileMode:
+    enabled: false
+
+  # 自定义页脚
+  footer:
+    copyright: "© 2025 海东青的Blog · 保留所有权利"
+    hideCopyright: false
+
+assets:
+  disableHLJS: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+
+services:
+  instagram:
+    disableInlineCSS: true
+  x:
+    disableInlineCSS: true
