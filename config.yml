@@ -67,7 +67,6 @@ params:
 
   # 首页个性化介绍
   homeInfoParams:
-    Title: "欢迎来到海东青的Blog"
     Content: |
       👋 你好，这里是海东青的个人博客！
       - 记录技术成长、学习心得和生活点滴。
